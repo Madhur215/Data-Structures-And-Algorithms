@@ -71,3 +71,23 @@ bool sudokuSolver(int board[][9])
     }
     return false;
 }
+
+int main(){
+    int bo[9][9];
+    for(int i = 0; i < 9 ; i++){
+        string s;
+        cin >> s;
+        for(int j = 0 ; j < 9 ; j++)
+            bo[i][j] = s[j] - '0';
+    }
+
+    sudokuSolver(bo);
+    for(int i = 0; i<9 ; i++)
+        for(int j = 0; j < 9 ; j++)
+            cout << bo[i][j] << " ";
+        cout << "\n";
+
+
+}
+
+
