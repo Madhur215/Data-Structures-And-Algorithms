@@ -37,12 +37,26 @@ void insertWord(TrieNode *root, string key){
 
 }
 
+bool searchWord(TrieNode* root, string key){
+    TrieNode* curr = root;
+    for(int i = 0 ; i < key.length(); i++){
+        int ind = key[i] - 'a';
+        if(curr->child[ind] == NULL)
+            return false;
+        curr = curr->child[ind];
+    }
+
+    return curr->isEnd;
+}
+
 
 int main(){
+
     TrieNode* root = new TrieNode;
     insertWord(root, "apple");
     insertWord(root, "boy");
     insertWord(root, "cat");
+    cout << searchWord(root, "boy");
 
     return 0;
 }
