@@ -1,3 +1,6 @@
+/*
+Problem Link: https://www.spoj.com/problems/EDIST/
+*/
 #include <bits/stdc++.h>
 #define ll long long
 #define repe(i, j, n) for(ll i = j ; i <= n ; i++)
@@ -68,7 +71,7 @@ int solve(int n, int m){
 int main(){
  
     fastio;
-    // tc{
+    tc{
         int n, m;
         cin >> s1 >> s2;
         n = (int)s1.length();
@@ -77,7 +80,7 @@ int main(){
         cout << solve(n, m) << endl;
 
 
-    // }
+    }
  
  
     return 0;
