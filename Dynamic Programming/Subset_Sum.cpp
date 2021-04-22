@@ -3,7 +3,6 @@
 #define endl "\n"
 #define tc int T; cin >> T; while(T--)
 #define pb push_back
-#define mod 1000000007
 #define S second
 #define F first
 #define int long long
